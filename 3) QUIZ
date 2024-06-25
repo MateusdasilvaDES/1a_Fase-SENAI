@@ -1,0 +1,281 @@
+/* Desenvolver a lógica de perguntas / respostas / pontuação para um mini-quiz utilizando a estrutura condicional SWITCH / CASE. 
+O quiz contém 4 perguntas com 4 respostas cada (conforme abaixo). Todas as respostas possuem uma pontuação específica.
+Realizar o cálculo da pontuação e mostrar ao final.
+
+1) Quais séries a seguir englobam melhor a temática de vampiros e assombração?
+
+A) Van Helsing (2 pontos)
+B) Castlevania (3 pontos)
+C) The Vampire Diaries (2 pontos)
+D) Blade: The Series (1 ponto)
+
+
+2) Dentre os livros abaixo, quais incluem melhor a temática de fantasia?
+
+A) Alice no País das Maravilhas (1 ponto)
+B) O Hobbit (1 ponto)
+C) A Fantástica Fábrica de Chocolates (1 ponto)
+D) Coraline (2 pontos)
+
+
+3) Quais das franquias listadas, representam melhor a empresa de jogos Nintendo?
+
+A) The Legend of Zelda (3 pontos)
+B) Kirby (2 pontos)
+C) Metroid (3 pontos)
+D) Super Mario Bros (2 pontos)
+
+
+4) Quais dos autores citados, representam melhor o gênero de livros de terror?
+
+A) Stephen King (2 pontos)
+B) Edgar Allan Poe (2 pontos)
+C) H.P. Lovecraft (2 pontos)
+D) Mary Shelley (1 ponto)
+
+Critérios de avaliação:
+
+(0,5) Criar uma tela (janela) inicial de boas vindas, explicando o quiz.
+(1,0) Validar para que respostas digitadas com letra minúscula (a, b, c, d) também somem os pontos.
+(1,0) Incluir uma validação para opções diferentes das alternativas, avisando a soma de 0 pontos.
+(0,5) Mostrar na tela ao final, quais foram as opções / respostas escolhidas em cada pergunta.
+(1,0) Mostrar os pontos ao final. Se conseguir pontuação máxima (10 pontos), incluir além da pontuação, uma mensagem "Parabéns!"
+
+ */
+
+// DECLARAÇÕES DE VARIAVEIS
+
+let resposta_usario_um, resposta_usario_dois, resposta_usario_três, resposta_usario_quatro
+var pontuação_questao_um, pontuação_questao_dois, pontuação_questao_três, pontuação_questao_quatro
+var resposta_final_um, resposta_final_dois, resposta_final_três, resposta_final_quatro
+var soma_pontos
+
+// ENTRADA DE DADOS 
+
+// JANELA INICIAL 
+
+alert('Boas vindas!')
+alert('\nExplicação do quiz: cada opção escolhida(a,b,c,d) vale um determinado ponto.\nno final os pontos seram somados e você tera a quantidade de pontos que fez!')
+alert('\nBoa sorte!')
+
+// QUESTÃO 1 
+
+  resposta_usario_um = prompt('1) Quais séries a seguir englobam melhor a temática de vampiros e assombração?\nA) Van Helsing\nB) Castlevania\nC) The Vampire Diaries\nD) Blade: The Series\nDigite a letra correspondente sua resposta: ').toLowerCase()
+  switch(resposta_usario_um){
+
+  case 'a':
+
+   alert('Você ganhou 2 pontos nessa questão, reponda as proximas!')
+
+   soma_pontos = 2
+   resposta_final_um = 'a'
+   pontuação_questao_um = 2
+   break
+
+  case 'b':
+ 
+  alert('Você ganhou 3 pontos nessa questão, reponda as proximas!')
+
+   soma_pontos = 3
+   resposta_final_um = 'b'
+   pontuação_questao_um = 3
+   break
+
+  case 'c':
+
+   alert('Você ganhou 2 pontos nessa questão, reponda as proximas!')
+  
+   soma_pontos = 2
+   resposta_final_um = 'c'
+   pontuação_questao_um = 2
+   break
+
+  case 'd':
+
+   alert('Você ganhou 1 pontos nessa questão, reponda as proximas!')
+  
+   soma_pontos = 1
+   resposta_final_um = 'd'
+   pontuação_questao_um = 1
+   break
+ 
+   default:
+
+   alert('Você não ganhou nenhum ponto nessa questão, responda as proximas!')
+
+   soma_pontos = 0
+   resposta_final_um = 'escolheu uma opção inesistente'
+ }
+
+// QUESTÃO 2 
+
+    resposta_usario_dois = prompt('2) Dentre os livros abaixo, quais incluem melhor a temática de fantasia?\nA) Alice no País das Maravilhas\nB) O Hobbit \nC) A Fantástica Fábrica de Chocolates \nD) Coraline\nDigite a letra correspondente sua resposta: ').toLowerCase()
+
+    switch(resposta_usario_dois){
+
+    case 'a':
+   
+     alert('Você ganhou 1 pontos nessa questão, reponda as proximas!')
+     
+     soma_pontos = soma_pontos + 1
+     resposta_final_dois = 'a'
+     pontuação_questao_dois = 1
+     break
+   
+    case 'b':
+    
+     alert('Você ganhou 1 pontos nessa questão, reponda as proximas!')
+     
+     soma_pontos = soma_pontos + 1
+     resposta_final_dois = 'b'
+     pontuação_questao_dois = 1
+     break
+   
+    case 'c':
+   
+     alert('Você ganhou 1 pontos nessa questão, reponda as proximas!')
+
+     soma_pontos = soma_pontos + 1
+     resposta_final_dois = 'c'
+     pontuação_questao_dois = 1
+     break
+   
+    case 'd':
+   
+     alert('Você ganhou 2 pontos nessa questão, reponda as proximas!')
+     
+     soma_pontos = soma_pontos + 2
+     resposta_final_dois = 'd'
+     pontuação_questao_dois = 2
+     break
+    
+    default:
+    
+    alert('Você não ganhou nenhum ponto nessa questão, responda as proximas!')
+    soma_pontos = soma_pontos + 0
+    resposta_final_dois ='escolheu uma opção inesistente'
+   
+   }
+
+// QUESTAO 3 
+
+   resposta_usario_três = prompt('3) Quais das franquias listadas, representam melhor a empresa de jogos Nintendo?\nA) The Legend of Zelda\nB) Kirby\nC) Metroid\nD) Super Mario Bros\nDigite a letra correspondente sua resposta: ').toLowerCase()
+
+   switch(resposta_usuario_três){
+
+   case 'a':
+
+    alert('Você ganhou 3 pontos nessa questão, reponda as proximas!')
+    
+    soma_pontos = soma_pontos + 3
+    resposta_final_três = 'a'
+    pontuação_questao_três = 3
+    break
+
+   case 'b':
+ 
+    alert('Você ganhou 2 pontos nessa questão, reponda as proximas!')
+    
+    soma_pontos = soma_pontos + 2
+    resposta_final_três = 'b'
+    pontuação_questao_três = 2
+    break
+
+   case 'c':
+
+    alert('Você ganhou 3 pontos nessa questão, reponda as proximas!')
+    
+    soma_pontos = soma_pontos + 3
+    resposta_final_três = 'c'
+    pontuação_questao_três = 3
+    break
+
+   case 'd':
+
+    alert('Você ganhou 2 pontos nessa questão, reponda as proximas!')
+    
+    soma_pontos = soma_pontos + 2
+    resposta_final_três = 'd'
+    pontuação_questao_três= 2
+    break
+ 
+   default:
+
+    alert('Você não ganhou nenhum ponto, responda as proximas!')
+    soma_pontos = soma_pontos + 0
+    resposta_final_três = 'escolheu uma opção inesistente'
+}
+
+// QUESTAO 4 
+
+   resposta_usario_quatro = prompt('4) Quais dos autores citados, representam melhor o gênero de livros de terror?\nA) Stephen King\nB) Edgar Allan Poe\nC) H.P. Lovecraft\nD) Mary Shelley\nDigite a letra correspondente sua resposta: ').toLowerCase()
+
+   switch (resposta_usario_quatro){
+
+   case 'a':
+
+    alert('Você ganhou 2 pontos nessa questão!')
+    
+    soma_pontos = soma_pontos + 2
+    resposta_final_quatro = 'a'
+    pontuação_questao_quatro = 2
+    break
+
+   case 'b':
+ 
+    alert('Você ganhou 3 pontos nessa questão!')
+    
+    soma_pontos = soma_pontos + 3
+    resposta_final_quatro = 'b'
+    pontuação_questao_quatro = 3
+    break
+
+   case 'c':
+
+    alert('Você ganhou 2 pontos nessa questão!')
+
+    soma_pontos = soma_pontos + 2
+    resposta_final_quatro = 'c'
+    pontuação_questao_quatro = 2
+    break
+
+   case 'd':
+
+    alert('Você ganhou 1 pontos nessa questão!')
+
+    soma_pontos = soma_pontos + 1
+    resposta_final_quatro = 'd'
+    pontuação_questao_quatro = 1
+    break
+ 
+   default:
+
+    alert('Você não ganhou nenhum ponto nessa questão!')
+
+    soma_pontos = soma_pontos + 0
+    resposta_final_quatro = 'escolheu uma opção inesistente'
+}
+
+// SAIDA DE DADOS 
+
+
+  alert('Essa foi sua opão escolhida na questão 1: ' + resposta_final_um)
+
+  alert('Essa foi sua opão escolhida na questão 2: ' + resposta_final_dois)
+
+  alert('Essa foi sua opão escolhida na questão 3: ' + resposta_final_três)
+
+  alert('Essa foi sua opão escolhida na questão 4: ' + resposta_final_quatro)
+
+
+  switch(true){
+
+    case(soma_pontos == 10):
+
+    alert('Esses são seus pontos finais: ' + soma_pontos + ' parabens!')
+
+    case(soma_pontos < 10):
+
+    alert('Esses são seus pontos finais: ' + soma_pontos)
+
+  }
