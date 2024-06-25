@@ -1,0 +1,67 @@
+/* No site Amazon, os produtos a venda podem ser avaliados pelos compradores, o que gera um índice (média aritmética) utilizado pelo algoritmo para definir 
+se o produto deve ou não ganhar destaque: destaque na página principal, destaque na página da categoria daquele produto, destaque na página de promoções ou
+não deve ganhar destaque. O índice é calculado através da avaliação de 3 quesitos pelo comprador: qualidade do produto, custo benefício, durabilidade. 
+Criar um sistema utilizando a estrutura condicional SWITCH / CASE, que receba avaliações do comprador nesses três quesitos (notas de 0 a 10) sobre um determinado 
+produto e gere o índice dele. Após receber as avaliações, mostrar o índice do produto e indicar se conseguiu destaque para: índice abaixo de 5 (não ganha destaque), 
+índice de 5 a menor que 7 (destaque na página da categoria), índice de 7 a menor que 9 (destaque em promoções), índice igual ou maior a 9 (destaque na página principal).
+
+
+Critérios de avaliação:
+
+(1,0) Receber e armazenar as notas dos três quesitos (avaliação).
+(1,0) Calcular o índice do produto (média aritmética) com três casas após a vírgula e mostrar na tela.
+(1,0) Criar o sistema de destaques com as quatro possibilidades e mostrar mensagem referente na tela.
+
+*/
+
+// DECLARAÇÕES DE VARIAVEIS
+
+let media_aritimetrica
+let qualidade_produto, custo_beneficio, durabilidade_produto
+let nome_produto, soma_notas_produto
+
+// ENTRADA DE DADOS 
+
+nome_produto = prompt('digite o nome do produto: ')
+
+qualidade_produto = Number(prompt('Digite uma nota de 1 a 10 para a qualide do produto: '))
+
+custo_beneficio = Number(prompt('Digite uma nota de 1 a 10 para o custo beneficio do produto: '))
+
+durabilidade_produto = Number(prompt('Digite uma nota de 1 a 10 para a durabilidade do produto: '))
+
+// CALCULOS
+
+soma_notas_produto = qualidade_produto + custo_beneficio + durabilidade_produto
+media_aritimetrica = soma_notas_produto / 3
+
+// SAIDA DE DADOS 
+
+switch(true){
+
+ case(media_aritimetrica < 5):
+
+  alert('Esse produto não ganha destaque!')
+  alert('Essa é a media do produto: ' + media_aritimetrica.toFixed(3))
+  break
+
+ case(media_aritimetrica >= 5 && media_aritimetrica < 7):
+
+  alert('Esse produto ganha destaque na página da categoria!')
+  alert('Essa é a media do produto: ' + media_aritimetrica.toFixed(3))
+  break
+
+ case(media_aritimetrica >=7 && media_aritimetrica < 9):
+
+  alert('Esse produto ganha destaque em promoções!')
+  alert('Essa é a media do produto: ' + media_aritimetrica.toFixed(3))
+  break
+ 
+ case(media_aritimetrica >= 9):
+
+  alert('Esse produto ganha destaque na página principal!')
+  alert('Essa é a media do produto: ' + media_aritimetrica.toFixed(3))
+  break
+
+}
+
