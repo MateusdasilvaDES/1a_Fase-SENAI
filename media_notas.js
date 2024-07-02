@@ -1,4 +1,4 @@
-/*Criar um projeto com HTML e JS, onde o usuário possa digitar três notas (inputs) e clicar em um botão para calcular a média (mostrar por alert).*/
+
 let nota_inpt_um = document.getElementById('InptUm')
 let nota_inpt_dois= document.getElementById('InptDois')
 let nota_inpt_tres = document.getElementById('InptTres')
