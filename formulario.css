@@ -1,0 +1,54 @@
+body{
+background-image: url("https://www.remessaonline.com.br/blog/wp-content/uploads/2021/03/programador-no-exterior-oportunidades.jpg.webp");
+background-size: cover;
+
+}
+.conteiner{
+
+margin: auto;
+justify-content: center;
+align-items: center;
+width: fit-content;
+background-color: white;
+border-radius: 10px;
+padding: 2%;
+height: 5%;
+margin-top: 10%;
+}
+
+img{
+ 
+    width: 120px; 
+    height: 10%;
+}
+
+.imagem{
+
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    
+}
+
+.cadastrodeperfil{
+
+
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
+
+}
+
+.finalcadastro{
+
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    
+}
+
+
