@@ -8,23 +8,24 @@
 </head>
 <body>
     <div class="conteiner">
-        <div class="cadastrodeperfil">
+       <div class="cadastrodeperfil">
             <h1>Cadastro de perfil</h1>
-        </div>
-            <div class="imagem">
+       </div>
+         <div class="imagem">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDt6YUZ8byMEXMW-FqLnk72EfrpTC-hcBKjQ&s" alt="imagem do usuario"><br><br>
-            </div>
-                 <label>Digite seu nome</label>&nbsp;&nbsp;<input type="text" placeholder = "Ex: mateus da silva"><br><br>
-                    <label>Digite seu email</label>&nbsp;&nbsp;<input type="email" placeholder="Ex: usuario@gmail.com"><br><br>
-                    <label>Digite sua senha</label>&nbsp;&nbsp;<input type="password"> <br><br>
-                    <label>Cidade natal</label>&nbsp;&nbsp;<input type="text" placeholder="Ex: Florianopolis"><br><br>
-                    <label>Endereço</label>&nbsp;&nbsp;<input type="text" placeholder="Ex: servidao tulipas 163"><br><br>
+         </div>
+            <label>Digite seu nome</label>&nbsp;&nbsp;<input id = "nome" type = "text" placeholder = "Ex: Mateus da silva"><br><br>
+                    <label>Digite seu email</label>&nbsp;&nbsp;<input id = "email_usuario" type="email" placeholder="Ex: usuario@gmail.com"><br><br>
+                    <label>Digite sua senha</label>&nbsp;&nbsp;<input id = "senha" type="password"> <br><br>
+                    <label>Cidade natal</label>&nbsp;&nbsp;<input id = "cidade_natal" type="text" placeholder="Ex: Florianopolis"><br><br>
+                    <label>Endereço</label>&nbsp;&nbsp;<input id = "endereço" type="text" placeholder="Ex: Servidao tulipas 163"><br><br>
                     <label>Brasileiro</label><input type="radio">&nbsp;&nbsp;&nbsp;&nbsp;<label>Estrangeiro</label><input type="radio"><br><br>
-                <input type="checkbox"><label>confirmo os dados de cadastro</label><br><br>
-            <div class="finalcadastro">
-                <button>Sair</button>&nbsp;&nbsp;<button>Confirmar cadastro</button>
-            </div>
-        
+            <input type="checkbox"><label>confirmo os dados de cadastro</label><br><br>
+         <div class="finalcadastro">
+            <button onclick = "sairCadastro()">Sair</button>&nbsp;&nbsp;<button onclick="confirmacaoCadastro()">Confirmar cadastro</button>
+         </div>
     </div>    
+
+    <script src="formulario.js"></script>
 </body>
 </html>

@@ -14,6 +14,7 @@ border-radius: 10px;
 padding: 2%;
 height: 5%;
 margin-top: 10%;
+
 }
 
 img{
@@ -49,6 +50,19 @@ img{
     align-items: center;
     height: 20px;
     
+}
+
+button{
+
+border-radius: 7px;
+
+
+}
+
+input{
+
+border: 2px solid;
+height: 20px;
 }
 
 
