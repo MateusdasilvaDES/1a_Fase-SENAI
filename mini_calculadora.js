@@ -17,7 +17,7 @@ function soma(){
 
  soma_numeros = Number(numero_inpt_um.value) + Number(numero_inpt_dois.value)
 
-alert(soma_numeros)
+ alert(soma_numeros)
 
 }
 
@@ -36,15 +36,17 @@ function multiplicação(){
     multiplicação_numeros =  Number(numero_inpt_um. value) * Number(numero_inpt_dois.value)
 
     alert(multiplicação_numeros)
+    
+   
 }
 
-
 function divisão(){
-
 
     divisão_numeros =  Number(numero_inpt_um. value) / Number(numero_inpt_dois.value)
 
     alert(divisão_numeros)
+   
+
 
 
 }
