@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de carros</title>
+</head>
+<body bgcolor="lighblue">
+    
+    <center>
+  
+        <h1>Comparador de carros</h1>
+        <p>Digite uma nota de 0 a 10 para as categorias dos carros:</p>
+
+        <label>Conforto</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Economia</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Design</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Media&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br><br>
+        <label>Ferrari</label>&nbsp;&nbsp;<input type="number" min = "0" max="10" placeholder="Nota" id = NotaConfortoUm>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" min = "0" max="10" placeholder="Nota" id = NotaEconomiaUm>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" min = "0" max="10" placeholder="Nota" id = NotaDesignUm>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input readonly placeholder="Media" id = 'MediaFerrari'><br><br>
+        <label>Gtr-R35</label>&nbsp;<input type="number" min = "0" max="10" placeholder="Nota" id = NotaConfortoDois>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" min = "0" max="10" placeholder="Nota" id = NotaEconomiaDois>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" min = "0" max="10" placeholder="Nota" id = NotaDesignDois>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input readonly placeholder="Media" id ='MediaGtr'><br><br>
+        <label>Porsche</label>&nbsp;&nbsp;<input  type="number" min = "0" max="10" placeholder="Nota" id = NotaConfortoTres>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" min = "0" max="10" placeholder="Nota" id = NotaEconomiaTres>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" min = "0" max="10" placeholder="Nota" id = NotaDesignTres>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input readonly placeholder="Media" id = 'MediaPorsche'><br><br>
+        <label>Melhor carro</label>&nbsp;&nbsp;<input readonly placeholder = "Resultado" id = "Resultado">&nbsp;&nbsp;<button onclick="comparar()">Comparar</button>
+    </center>
+
+   
+    <script src="nota_carros.js"></script>
+
+
+
+</body>
+</html>
